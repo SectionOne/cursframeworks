@@ -1,16 +1,10 @@
-/* eslint-disable no-constant-condition */
-import './App.css'
-
+import './App.css';
+import Header from './Header.js';
 function App() {
-  const functionWithParameters = (parameter) => {
-    console.log(`Funció activada desde: ${parameter}`)
-  }
-    return (
+  return (
     <>
-      <button onClick={() => functionWithParameters('onClick')}>On Click</button>
-      <h1 onMouseOver={() => functionWithParameters('onMouseOver')}>Mouse Over Event</h1>
+      <Header/>
     </>
-  )
+  );
 }
-
-export default App
+export default App;
