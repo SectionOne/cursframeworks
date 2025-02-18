@@ -1,6 +1,7 @@
 import './App.css';
 import FunctionalParentComponent from './FunctionalParentComponent.jsx';
 import ClasseParentFillaPare from './ClasseParentFillaPare.jsx';
+import FunctionalParentFillaPare from './FunctionalParentFillaPare.jsx';
 import Header from './Header.jsx';
 import ParentComponent from './ParentComponent.jsx';
 function App() {
@@ -20,6 +21,10 @@ function App() {
       <div>
         <h2>Sóc un component de Classe, parlant de fill a pare</h2>
         <ClasseParentFillaPare/>
+      </div>
+      <div>
+        <h2>Sóc un component Funcional, parlant de fill a pare</h2>
+        <FunctionalParentFillaPare/>
       </div>
     </>
   );
