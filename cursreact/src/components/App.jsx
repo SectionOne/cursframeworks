@@ -6,6 +6,7 @@ import ParentNoRelationalComponents from './ParentNoRelationalComponents.jsx';
 import ClassComponentMuntatge1 from './muntatge/ClassComponent1.jsx';
 import ClassComponentMuntatge from './muntatge/ClassComponent.jsx';
 import FunctionalComponentActualitzacio from './actualitzacio/FunctionalComponent.jsx';
+import ClassComponentActualitzacio from './actualitzacio/ClassComponent.jsx';
 import Header from './Header.jsx';
 import ParentComponent from './ParentComponent.jsx';
 function App() {
@@ -45,6 +46,10 @@ function App() {
       <div>
         <h2>Sóc un component d’Actualitzacio funcional</h2>
         <FunctionalComponentActualitzacio />
+      </div>
+      <div>
+        <h2>Sóc un component d’Actualitzacio de Classe</h2>
+        <ClassComponentActualitzacio />
       </div>
     </>
   );
