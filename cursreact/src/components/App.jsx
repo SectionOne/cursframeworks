@@ -3,7 +3,9 @@ import Header from './Header.jsx';
 function App() {
   return (
     <>
-      <Header/>
+      <div className='bg-primary card'>
+        <Header/>
+      </div>
     </>
   );
 }
