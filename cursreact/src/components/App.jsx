@@ -2,6 +2,7 @@ import './App.css';
 import FunctionalParentComponent from './FunctionalParentComponent.jsx';
 import ClasseParentFillaPare from './ClasseParentFillaPare.jsx';
 import FunctionalParentFillaPare from './FunctionalParentFillaPare.jsx';
+import ParentNoRelationalComponents from './ParentNoRelationalComponents.jsx';
 import Header from './Header.jsx';
 import ParentComponent from './ParentComponent.jsx';
 function App() {
@@ -25,6 +26,10 @@ function App() {
       <div>
         <h2>Sóc un component Funcional, parlant de fill a pare</h2>
         <FunctionalParentFillaPare/>
+      </div>
+      <div>
+        <h2>Sóc un component Pare amb comunicació entre components no relacional</h2>
+        <ParentNoRelationalComponents />
       </div>
     </>
   );
