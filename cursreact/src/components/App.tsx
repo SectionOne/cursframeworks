@@ -15,6 +15,7 @@ import GreetingLogin from './tscomponents/ClassComponent.js';
 import PropsOpcionals from './tsprops/PropsOpcionals.js';
 import PropsDefecte from './tsprops/PropsDefecte.js';
 import PropsFuncions from './tsprops/PropsFuncions.js';
+import AltresChildren from './altrescasos/children.tsx';
 import Header from './Header.jsx';
 import ParentComponent from './ParentComponent.jsx';
 import React from 'react';
@@ -102,6 +103,12 @@ const App = () => {
         <h2>Sóc un component amb Props amb Funcions</h2>
         {/* Utilitzem el component Button */}
         <PropsFuncions onClick={handleClick} label="Fes clic aquí" />
+      </div>
+      <div>
+        <AltresChildren>
+          <h1>Benvingut/da!</h1>
+          <p>Aquest és un exemple de children.</p>
+        </AltresChildren>
       </div>
     </>
   );
