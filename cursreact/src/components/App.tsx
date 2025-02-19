@@ -9,14 +9,21 @@ import FunctionalComponentActualitzacio from './actualitzacio/FunctionalComponen
 import ClassComponentActualitzacio from './actualitzacio/ClassComponent.jsx';
 import FunctionalComponentDesmuntatge from './desmuntatge/FunctionalComponent.jsx';
 import ClassComponentDesmuntatge from './desmuntatge/ClassComponent.jsx';
-import GreetingReactFC from './tscomponents/FunctionalComponentReactFc';
-import GreetingReact from './tscomponents/FunctionalComponentReact';
-import GreetingLogin from './tscomponents/ClassComponent';
-import PropsOpcionals from './tsprops/PropsOpcionals';
-import PropsDefecte from './tsprops/PropsDefecte';
+import GreetingReactFC from './tscomponents/FunctionalComponentReactFc.js';
+import GreetingReact from './tscomponents/FunctionalComponentReact.js';
+import GreetingLogin from './tscomponents/ClassComponent.js';
+import PropsOpcionals from './tsprops/PropsOpcionals.js';
+import PropsDefecte from './tsprops/PropsDefecte.js';
+import PropsFuncions from './tsprops/PropsFuncions.js';
 import Header from './Header.jsx';
 import ParentComponent from './ParentComponent.jsx';
-function App() {
+import React from 'react';
+const App = () => {
+  // Funció que s'executa en fer clic al botó
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    alert('Has fet clic al botó!');
+  };
+
   return (
     <>
       <div className='bg-primary card'>
@@ -90,6 +97,11 @@ function App() {
 
         {/* Exemple només amb nom (age pren el valor per defecte) */}
         <PropsDefecte name="Maria" />
+      </div>
+      <div>
+        <h2>Sóc un component amb Props amb Funcions</h2>
+        {/* Utilitzem el component Button */}
+        <PropsFuncions onClick={handleClick} label="Fes clic aquí" />
       </div>
     </>
   );
