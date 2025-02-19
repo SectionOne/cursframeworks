@@ -13,6 +13,7 @@ import GreetingReactFC from './tscomponents/FunctionalComponentReactFc';
 import GreetingReact from './tscomponents/FunctionalComponentReact';
 import GreetingLogin from './tscomponents/ClassComponent';
 import PropsOpcionals from './tsprops/PropsOpcionals';
+import PropsDefecte from './tsprops/PropsDefecte';
 import Header from './Header.jsx';
 import ParentComponent from './ParentComponent.jsx';
 function App() {
@@ -81,6 +82,14 @@ function App() {
         <h2>Sóc un component amb Props Opcionals</h2>
         <PropsOpcionals name="John" age={30} />
         <PropsOpcionals name="John" />
+      </div>
+      <div>
+        <h2>Sóc un component amb Props per Defecte</h2>
+        {/* Exemple amb nom i edat */}
+        <PropsDefecte name="Joan" age={30} />
+
+        {/* Exemple només amb nom (age pren el valor per defecte) */}
+        <PropsDefecte name="Maria" />
       </div>
     </>
   );
