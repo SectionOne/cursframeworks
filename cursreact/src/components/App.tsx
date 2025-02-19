@@ -20,6 +20,7 @@ import AltresReactNode from './altrescasos/ReactNode.tsx';
 import TsUseState from './tsestats/TsUseState.tsx';
 import TsUseEffect from './tsestats/TsUseEffect.tsx';
 import TsOnchange from './events/Onchange.tsx';
+import TsUseRef from './referencies/UseRef.tsx';
 import Header from './Header.jsx';
 import ParentComponent from './ParentComponent.jsx';
 import React from 'react';
@@ -127,6 +128,13 @@ const App: React.FC = () => {
       <div>
         <h2>Sóc un OnChange tipat</h2>
         <TsOnchange />
+      </div>
+      <div>
+        <h2>Sóc un Reference tipat</h2>
+        <TsUseRef />
+      </div>
+      <div>
+
       </div>
     </>
   );
