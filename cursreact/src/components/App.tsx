@@ -18,6 +18,7 @@ import PropsFuncions from './tsprops/PropsFuncions.js';
 import AltresChildren from './altrescasos/children.tsx';
 import AltresReactNode from './altrescasos/ReactNode.tsx';
 import TsUseState from './tsestats/TsUseState.tsx';
+import TsUseEffect from './tsestats/TsUseEffect.tsx';
 import Header from './Header.jsx';
 import ParentComponent from './ParentComponent.jsx';
 import React from 'react';
@@ -121,6 +122,10 @@ const App = () => {
       <div>
         <h2>Sóc un UseState tipat</h2>
         <TsUseState />
+      </div>
+      <div>
+        <h2>Sóc un UseEffect tipat</h2>
+        <TsUseEffect />
       </div>
     </>
   );
