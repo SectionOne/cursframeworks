@@ -9,6 +9,7 @@ import FunctionalComponentActualitzacio from './actualitzacio/FunctionalComponen
 import ClassComponentActualitzacio from './actualitzacio/ClassComponent.jsx';
 import FunctionalComponentDesmuntatge from './desmuntatge/FunctionalComponent.jsx';
 import ClassComponentDesmuntatge from './desmuntatge/ClassComponent.jsx';
+import GreetingReactFC from './tscomponents/FunctionalComponentReactFc';
 import Header from './Header.jsx';
 import ParentComponent from './ParentComponent.jsx';
 function App() {
@@ -60,6 +61,10 @@ function App() {
       <div>
         <h2>Sóc un component de Desmuntatge de Classe</h2>
         <ClassComponentDesmuntatge />
+      </div>
+      <div>
+        <h2>Sóc un component React Tipat Funcional amb React.FC</h2>
+        <GreetingReactFC name="John" age={30} />
       </div>
     </>
   );
