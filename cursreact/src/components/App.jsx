@@ -11,6 +11,7 @@ import FunctionalComponentDesmuntatge from './desmuntatge/FunctionalComponent.js
 import ClassComponentDesmuntatge from './desmuntatge/ClassComponent.jsx';
 import GreetingReactFC from './tscomponents/FunctionalComponentReactFc';
 import GreetingReact from './tscomponents/FunctionalComponentReact';
+import GreetingLogin from './tscomponents/ClassComponent';
 import Header from './Header.jsx';
 import ParentComponent from './ParentComponent.jsx';
 function App() {
@@ -70,6 +71,10 @@ function App() {
       <div>
         <h2>Sóc un component React Tipat Funcional sense React.FC</h2>
         <GreetingReact name="John" age={30} />
+      </div>
+      <div>
+        <h2>Sóc un component React Tipat de Classe</h2>
+        <GreetingLogin name="John" age={30} />
       </div>
     </>
   );
