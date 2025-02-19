@@ -19,10 +19,11 @@ import AltresChildren from './altrescasos/children.tsx';
 import AltresReactNode from './altrescasos/ReactNode.tsx';
 import TsUseState from './tsestats/TsUseState.tsx';
 import TsUseEffect from './tsestats/TsUseEffect.tsx';
+import TsOnchange from './events/Onchange.tsx';
 import Header from './Header.jsx';
 import ParentComponent from './ParentComponent.jsx';
 import React from 'react';
-const App = () => {
+const App: React.FC = () => {
   // Funció que s'executa en fer clic al botó
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     alert('Has fet clic al botó!');
@@ -124,8 +125,8 @@ const App = () => {
         <TsUseState />
       </div>
       <div>
-        <h2>Sóc un UseEffect tipat</h2>
-        <TsUseEffect />
+        <h2>Sóc un OnChange tipat</h2>
+        <TsOnchange />
       </div>
     </>
   );
