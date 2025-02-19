@@ -17,6 +17,7 @@ import PropsDefecte from './tsprops/PropsDefecte.js';
 import PropsFuncions from './tsprops/PropsFuncions.js';
 import AltresChildren from './altrescasos/children.tsx';
 import AltresReactNode from './altrescasos/ReactNode.tsx';
+import TsUseState from './tsestats/TsUseState.tsx';
 import Header from './Header.jsx';
 import ParentComponent from './ParentComponent.jsx';
 import React from 'react';
@@ -116,6 +117,10 @@ const App = () => {
           <h1>Benvingut/da!</h1>
           <p>Aquest és un exemple de children amb React Node per una Interficie.</p>
         </AltresReactNode>
+      </div>
+      <div>
+        <h2>Sóc un UseState tipat</h2>
+        <TsUseState />
       </div>
     </>
   );
