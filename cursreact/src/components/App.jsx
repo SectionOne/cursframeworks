@@ -12,6 +12,7 @@ import ClassComponentDesmuntatge from './desmuntatge/ClassComponent.jsx';
 import GreetingReactFC from './tscomponents/FunctionalComponentReactFc';
 import GreetingReact from './tscomponents/FunctionalComponentReact';
 import GreetingLogin from './tscomponents/ClassComponent';
+import PropsOpcionals from './tsprops/PropsOpcionals';
 import Header from './Header.jsx';
 import ParentComponent from './ParentComponent.jsx';
 function App() {
@@ -75,6 +76,11 @@ function App() {
       <div>
         <h2>Sóc un component React Tipat de Classe</h2>
         <GreetingLogin name="John" age={30} />
+      </div>
+      <div>
+        <h2>Sóc un component amb Props Opcionals</h2>
+        <PropsOpcionals name="John" age={30} />
+        <PropsOpcionals name="John" />
       </div>
     </>
   );
