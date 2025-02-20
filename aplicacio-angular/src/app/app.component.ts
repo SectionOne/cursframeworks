@@ -6,6 +6,7 @@ import { PareComponent } from './components/pareafill/pare/pare.component';
 import { FillaPareComponent } from './components/fillapare/pare/pare.component';
 import { ComponentA } from './components/component-a/component-a.component'; // Importa ComponentA
 import { ComponentB } from './components/component-b/component-b.component'; // Importa ComponentB
+import { PareComponentViewChild } from './components/viewchild/pare/pare.component'; // Importa el component pare
 
 @Component({
   selector: 'app-root',
@@ -17,6 +18,7 @@ import { ComponentB } from './components/component-b/component-b.component'; // 
     FillaPareComponent,
     ComponentA,
     ComponentB,
+    PareComponentViewChild,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
