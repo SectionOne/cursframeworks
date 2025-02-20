@@ -8,6 +8,7 @@ import { ComponentA } from './components/component-a/component-a.component'; // 
 import { ComponentB } from './components/component-b/component-b.component'; // Importa ComponentB
 import { PareComponentViewChild } from './components/viewchild/pare/pare.component'; // Importa el component pare
 import { NgifComponent } from './components/ngif/ngif.component';
+import { NgStyleComponent } from './components/ngstyle/ngstyle.component';
 
 @Component({
   selector: 'app-root',
@@ -21,6 +22,7 @@ import { NgifComponent } from './components/ngif/ngif.component';
     ComponentB,
     PareComponentViewChild,
     NgifComponent,
+    NgStyleComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
